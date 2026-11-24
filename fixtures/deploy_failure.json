@@ -1,0 +1,56 @@
+{
+ "synthetic": true,
+ "events": [
+  {
+   "id": "e1",
+   "ts": "2026-03-01T10:00:00Z",
+   "service": "api",
+   "level": "INFO",
+   "msg": "healthy",
+   "attrs": {}
+  },
+  {
+   "id": "e2",
+   "ts": "2026-03-01T10:02:00Z",
+   "service": "api",
+   "level": "INFO",
+   "msg": "deploy v2.4.1 started",
+   "attrs": {
+    "kind": "deploy",
+    "version": "v2.4.1"
+   }
+  },
+  {
+   "id": "e3",
+   "ts": "2026-03-01T10:02:30Z",
+   "service": "api",
+   "level": "ERROR",
+   "msg": "config key DB_POOL missing",
+   "attrs": {}
+  },
+  {
+   "id": "e4",
+   "ts": "2026-03-01T10:02:40Z",
+   "service": "api",
+   "level": "ERROR",
+   "msg": "startup failed, restarting",
+   "attrs": {}
+  },
+  {
+   "id": "e5",
+   "ts": "2026-03-01T10:03:10Z",
+   "service": "api",
+   "level": "FATAL",
+   "msg": "crash loop",
+   "attrs": {}
+  },
+  {
+   "id": "e6",
+   "ts": "2026-03-01T10:03:20Z",
+   "service": "db",
+   "level": "INFO",
+   "msg": "connections idle",
+   "attrs": {}
+  }
+ ]
+}
