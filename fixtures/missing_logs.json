@@ -1,0 +1,29 @@
+{
+ "synthetic": true,
+ "events": [
+  {
+   "id": "e1",
+   "ts": "2026-03-01T14:00:00Z",
+   "service": "cache",
+   "level": "INFO",
+   "msg": "ok",
+   "attrs": {}
+  },
+  {
+   "id": "e2",
+   "ts": "2026-03-01T14:20:00Z",
+   "service": "cache",
+   "level": "ERROR",
+   "msg": "connection refused",
+   "attrs": {}
+  },
+  {
+   "id": "e3",
+   "ts": "2026-03-01T14:20:10Z",
+   "service": "api",
+   "level": "INFO",
+   "msg": "ok",
+   "attrs": {}
+  }
+ ]
+}
