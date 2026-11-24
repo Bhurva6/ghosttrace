@@ -1,0 +1,12 @@
+<!doctype html><meta charset=utf-8><title>GhostTrace</title><style>body{background:#120d1f;color:#e8e2f5;font:15px/1.5 system-ui;max-width:900px;margin:2rem auto;padding:0 1rem}
+h1{color:#b794f6;letter-spacing:.05em}h2{border-bottom:1px solid #3b2d5c;padding-bottom:.3rem;margin-top:2rem}
+.ev{border-left:3px solid #6ee7b7;padding:.3rem .8rem;margin:.4rem 0;background:#1b1430}
+.hy{border-left:3px solid #f6ad55;padding:.3rem .8rem;margin:.6rem 0;background:#241a38}
+.gap{border-left:3px solid #fc8181;padding:.3rem .8rem;margin:.4rem 0;background:#2a1730}
+code{color:#fbd38d}.tag{font-size:.75em;border:1px solid #6b5a99;border-radius:4px;padding:0 .4em;margin-left:.4em}</style><h1>GHOSTTRACE</h1>
+<p>5 events, services: api. Evidence lists events from the logs. Hypotheses are guesses and need human review.</p>
+<h2>Evidence (from the logs)</h2>
+<div class=ev><code>2026-03-01T12:00:00Z</code> <b>api</b> <span class=tag>first_error</span> latency spike <small>[e1]</small></div>
+<div class=ev><code>2026-03-01T12:04:00Z</code> <b>api</b> <span class=tag>deploy</span> deploy v3.0.0 <small>[e3]</small></div>
+<h2>Hypotheses (not evidence)</h2>
+<div class=hy><b>deploy_failure</b> <span class=tag>confidence: low</span><br>Deploy v3.0.0 to api may have introduced the errors.<br><small>Supporting: e3, e4, e5<br>Contradicting: e1, e2<br>Unknown: Errors predate the deploy, so it may be a coincidence; Deploy diff not in logs; Whether a rollback was tried; Support begins after the first symptom, so this may be an effect<br>Suggested regression test (needs your approval): api starts cleanly with config from release v3.0.0</small></div>
