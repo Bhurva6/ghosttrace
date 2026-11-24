@@ -1,0 +1,48 @@
+{
+ "synthetic": true,
+ "events": [
+  {
+   "id": "e1",
+   "ts": "2026-03-01T12:00:00Z",
+   "service": "api",
+   "level": "ERROR",
+   "msg": "latency spike",
+   "attrs": {}
+  },
+  {
+   "id": "e2",
+   "ts": "2026-03-01T12:00:30Z",
+   "service": "api",
+   "level": "ERROR",
+   "msg": "5xx rising",
+   "attrs": {}
+  },
+  {
+   "id": "e3",
+   "ts": "2026-03-01T12:04:00Z",
+   "service": "api",
+   "level": "INFO",
+   "msg": "deploy v3.0.0",
+   "attrs": {
+    "kind": "deploy",
+    "version": "v3.0.0"
+   }
+  },
+  {
+   "id": "e4",
+   "ts": "2026-03-01T12:04:20Z",
+   "service": "api",
+   "level": "ERROR",
+   "msg": "5xx continue",
+   "attrs": {}
+  },
+  {
+   "id": "e5",
+   "ts": "2026-03-01T12:04:40Z",
+   "service": "api",
+   "level": "ERROR",
+   "msg": "5xx continue",
+   "attrs": {}
+  }
+ ]
+}
