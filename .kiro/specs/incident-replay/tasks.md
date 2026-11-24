@@ -1,0 +1,4 @@
+- [x] Engine: validate, timeline, hypotheses
+- [x] Fixtures: deploy failure, retry storm, credential expiry, misleading correlation, missing logs
+- [x] HTML report
+- [x] Tests (20)
