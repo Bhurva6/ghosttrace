@@ -1,0 +1,101 @@
+{
+ "synthetic": true,
+ "events": [
+  {
+   "id": "e1",
+   "ts": "2026-03-01T11:00:00Z",
+   "service": "worker",
+   "level": "INFO",
+   "msg": "job start",
+   "attrs": {}
+  },
+  {
+   "id": "e2",
+   "ts": "2026-03-01T11:00:10Z",
+   "service": "worker",
+   "level": "WARN",
+   "msg": "retry payments-gw",
+   "attrs": {
+    "kind": "retry",
+    "target": "payments-gw",
+    "delay_ms": 100
+   }
+  },
+  {
+   "id": "e3",
+   "ts": "2026-03-01T11:00:15Z",
+   "service": "worker",
+   "level": "WARN",
+   "msg": "retry payments-gw",
+   "attrs": {
+    "kind": "retry",
+    "target": "payments-gw",
+    "delay_ms": 100
+   }
+  },
+  {
+   "id": "e4",
+   "ts": "2026-03-01T11:00:20Z",
+   "service": "worker",
+   "level": "WARN",
+   "msg": "retry payments-gw",
+   "attrs": {
+    "kind": "retry",
+    "target": "payments-gw",
+    "delay_ms": 100
+   }
+  },
+  {
+   "id": "e5",
+   "ts": "2026-03-01T11:00:25Z",
+   "service": "worker",
+   "level": "WARN",
+   "msg": "retry payments-gw",
+   "attrs": {
+    "kind": "retry",
+    "target": "payments-gw",
+    "delay_ms": 100
+   }
+  },
+  {
+   "id": "e6",
+   "ts": "2026-03-01T11:00:30Z",
+   "service": "worker",
+   "level": "WARN",
+   "msg": "retry payments-gw",
+   "attrs": {
+    "kind": "retry",
+    "target": "payments-gw",
+    "delay_ms": 100
+   }
+  },
+  {
+   "id": "e7",
+   "ts": "2026-03-01T11:00:35Z",
+   "service": "worker",
+   "level": "WARN",
+   "msg": "retry payments-gw",
+   "attrs": {
+    "kind": "retry",
+    "target": "payments-gw",
+    "delay_ms": 100
+   }
+  },
+  {
+   "id": "e9",
+   "ts": "2026-03-01T11:01:00Z",
+   "service": "payments-gw",
+   "level": "ERROR",
+   "msg": "timeout",
+   "attrs": {}
+  },
+  {
+   "id": "e10",
+   "ts": "2026-03-01T11:01:05Z",
+   "service": "payments-gw",
+   "level": "ERROR",
+   "msg": "overloaded",
+   "attrs": {}
+  }
+ ]
+}
